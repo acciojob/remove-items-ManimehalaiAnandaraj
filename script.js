@@ -2,8 +2,9 @@
 	const selectElement = document.getElementById('colorSelect');
 const removeButton = document.querySelector('button');
 
-removeButton.addEventListener('click',() {
-	const selectedIndex = selectElement.selectedIndex;
+removeButton.addEventListener('click',function() {
+	
+	var selectedIndex = selectElement.selectedIndex;
 	if(selectedIndex != -1) {
 		selectElement.remove(selectElement.selectedIndex);
 	}
